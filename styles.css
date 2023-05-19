@@ -66,8 +66,12 @@ ul {
   background-color: #2f303a;
   width: 1600px;
   height: 600px;
+}
+.main-section-title {
   display: flex;
   text-align: center;
+  align-items: center;
+  padding: 200px 452px 40px;
 }
 .title {
   font-weight: 900;
@@ -85,9 +89,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #fff;
   background-color: #2196f3;
@@ -124,6 +125,12 @@ ul {
   letter-spacing: 0.03em;
   color: #212121;
 }
+.li-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 215px;
+  margin: 0;
+}
 
 .image-text {
   font-size: 16px;
@@ -145,6 +152,9 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 60px;
 }
 
 .footer-text > a {
@@ -169,6 +179,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding-top: 28px;
 }
 
 .footer-address > a {
@@ -177,6 +188,8 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-content: space-between;
 }
 
 .button2 {
@@ -206,12 +219,15 @@ button:focus {
   cursor: pointer;
 }
 
-.image-text {
+.image-items {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 215px 94px;
 }
 
 .portfolio-image-text {
@@ -232,3 +248,4 @@ a:hover {
 a:focus {
   color: #2196f3;
 }
+/* Our team section */
