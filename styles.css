@@ -23,6 +23,13 @@ ul {
   letter-spacing: 0.02em;
   background: #fff;
   color: black;
+  padding: 20px 215px;
+  display: flex;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header > a {
@@ -57,9 +64,10 @@ ul {
 
 .main-section {
   background-color: #2f303a;
-  margin: auto;
   width: 1600px;
   height: 600px;
+  display: flex;
+  text-align: center;
 }
 .title {
   font-weight: 900;
@@ -67,9 +75,9 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: auto;
-  width: 696px;
-  height: 120px;
+  margin: 0 auto;
+  max-width: 696px;
+  margin-bottom: 30px;
   color: #ffffff;
 }
 
@@ -100,6 +108,12 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+.text-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 94px 215px;
+  margin: 0 auto;
 }
 
 .subtitle {
