@@ -185,6 +185,10 @@ ul {
   padding-bottom: 60px;
   background-color: #2f303a;
   width: 1600px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 1154px 60px 215px;
 }
 
 .footer-text > a {
@@ -208,6 +212,7 @@ ul {
   height: 72px;
   left: 215px;
   right: 2216px;
+  margin: 0;
 }
 
 .footer-address > a {
