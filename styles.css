@@ -20,6 +20,13 @@ ul {
   color: #2196f3;
 }
 
+.container {
+  width: 1200px;
+  height: 38px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
 .header {
   font-weight: 500;
   font-size: 14px;
@@ -29,15 +36,48 @@ ul {
   color: black;
   width: 1600px;
   height: 80px;
+  align-items: center;
+  display: flex;
 }
-.container {
+
+.header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-list {
+  width: 259px;
+  padding-right: 270px;
+}
+.header-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+.header-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 0;
 }
 
-.header > a {
+.container.header-text {
+  padding-left: 215px;
+}
+
+.container > a {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -111,7 +151,7 @@ ul {
   cursor: pointer;
 }
 
-.text-title span {
+.details span {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -125,7 +165,22 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 94px 215px;
-  margin: 0 auto;
+  margin: 0;
+  gap: 30px;
+}
+
+.details {
+  display: inherit;
+  margin: 0;
+  display: grid;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  width: 100%;
 }
 
 .subtitle {
@@ -175,9 +230,16 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
+.footer {
+  width: 1600px;
+}
 .footer-text {
+  font-style: normal font;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -185,14 +247,32 @@ ul {
   padding-left: 215px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  width: 1600px;
-  margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 28px 1154px 60px 215px;
+}
+
+.footer-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-text .mail-footer,
+.footer-text .phone-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 .footer-text > a {
+  /* WebStudiu footer */
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -202,44 +282,12 @@ ul {
   text-decoration: none;
 }
 
-.footer-address {
-  font-style: inherit;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.address {
+  display: flex;
+  flex-direction: column;
   padding-top: 28px;
-  width: 231px;
-  height: 72px;
-  left: 215px;
-  right: 2216px;
-  margin: 0;
 }
 
-.footer-address > a {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.button2 {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  width: 120px;
-  height: 38px;
-  left: 614px;
-  top: 174px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: none;
-}
 button:hover {
   background-color: #2196f3;
   color: #fff;
@@ -280,4 +328,96 @@ a:hover {
 }
 a:focus {
   color: #2196f3;
+}
+
+/* Portfolio Button Section */
+
+.portfolio-btn {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 22px;
+  margin: 0;
+  height: 38px;
+  border-style: none;
+  font-style: normal;
+  text-align: center;
+}
+
+.btn-list {
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.problem-button {
+  width: 120px;
+}
+
+.btn-section {
+  border-top: 1px solid #ececec;
+  padding: 92px 542px 50px;
+  width: fit-content;
+}
+/* Cards Section */
+.card-items {
+  border: 1px solid #eee;
+  width: 370px;
+  height: 404px;
+  margin: 0;
+}
+
+.portfolio-cards {
+  margin: 0;
+  width: 1200px;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+}
+
+.portfolio-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0;
+}
+
+.card-items h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  margin: 0;
+  color: #212121;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.card-items p {
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 4px;
+  margin: 0;
+}
+.card-items:hover,
+.card-items:focus {
+  cursor: pointer;
+  border-color: #2196f3;
 }

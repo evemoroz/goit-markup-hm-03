@@ -6,130 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="index.html"><span class="web">Web</span>Studio</a>
-      <nav class="links">
-        <ul>
-          <li><a href="index.html">Studio</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
+      <div class="container header-text">
+        <a href="index.html" class="header-logo"
+          ><span class="web">Web</span>Studio</a
+        >
+        <nav class="links">
+          <ul class="header-text nav-list">
+            <li><a href="index.html">Studio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header-address">
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+12127724150" class="phone-header">+1 212-772-4150</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-address">
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+12127724150">+1 212-772-4150</a>
-        </li>
-      </ul>
+      </div>
     </header>
-    <!-- Main -->
+    <!-- Main Section -->
     <main>
       <!-- Page filter -->
-      <section>
-        <ul>
-          <li><button class="button2" type="button">All</button></li>
-          <li><button class="button2" type="button">Web-sites</button></li>
-          <li><button class="button2" type="button">Apps</button></li>
-          <li><button class="button2" type="button">Design</button></li>
-          <li><button class="button2" type="button">Marketing</button></li>
+      <section class="btn-section">
+        <ul class="btn-list">
+          <li><button class="portfolio-btn" type="button">All</button></li>
+          <li>
+            <button class="portfolio-btn problem-button" type="button">
+              Web-sites
+            </button>
+          </li>
+          <li><button class="portfolio-btn" type="button">Apps</button></li>
+          <li><button class="portfolio-btn" type="button">Design</button></li>
+          <li>
+            <button class="portfolio-btn" type="button">Marketing</button>
+          </li>
         </ul>
       </section>
       <section>
-        <ul class="portfolio-image-text">
-          <li>
-            <img
-              src="./images/laptop-people.jpg"
-              alt="Laptop"
-              width="370px"
-              height="294px"
-            /><br /><span>Technoduck</span><br />Web-site
-          </li>
-          <li>
-            <img
-              src="./images/basket.jpg"
-              alt="Basket"
-              width="370px"
-              height="294px"
-            /><br /><span>Poster New Orlean vs Golden Star</span><br />Design
-          </li>
-          <li>
-            <img
-              src="./images/seafood.jpg"
-              alt="Seafood"
-              width="370px"
-              height="294px"
-            /><br /><span>Seafood Restaurant </span><br />Apps
-          </li>
-          <li>
-            <img
-              src="./images/headphones.jpg"
-              alt="Headphones"
-              width="370px"
-              height="294px"
-            /><br /><span>Project Prime</span><br />Marketing
-          </li>
-          <li>
-            <img
-              src="./images/boxes.jpg"
-              alt="Project Boxes"
-              width="370px"
-              height="294px"
-            /><br /><span>Project Boxes</span><br />Apps
-          </li>
-          <li>
-            <img
-              src="./images/computer.jpg"
-              alt="Computer"
-              width="370px"
-              height="294px"
-            /><br /><span>Inspiration has no Borders</span><br />Web-site
-          </li>
-          <li>
-            <img
-              src="./images/magazine.jpg"
-              alt="Magazine"
-              width="370px"
-              height="294px"
-            /><br /><span>Limited Edition</span>
-            <br />
-            Design
-          </li>
-          <li>
-            <img
-              src="./images/label.jpg"
-              alt="Label"
-              width="370px"
-              height="294px"
-            /><br /><span>Project LAB</span>
-            <br />
-            Marketing
-          </li>
-          <li>
-            <img
-              src="./images/laptop.jpg"
-              alt="Laptop"
-              width="370px"
-              height="294px"
-            /><br /><span>Growing Business</span>
-            <br />
-            Apps
-          </li>
-        </ul>
+        <div class="portfolio-cards">
+          <ul class="portfolio-list">
+            <li class="card-items">
+              <img
+                src="./images/laptop-people.jpg"
+                alt="Laptop"
+                width="370px"
+                height="294px"
+              />
+              <h3>Technoduck</h3>
+              <p>Web-site</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/basket.jpg"
+                alt="Basket"
+                width="370px"
+                height="294px"
+              /><br />
+              <h3>Poster New Orlean vs Golden Star</h3>
+              <p>Design</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/seafood.jpg"
+                alt="Seafood"
+                width="370px"
+                height="294px"
+              />
+              <h3>Seafood Restaurant</h3>
+              <p>Apps</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/headphones.jpg"
+                alt="Headphones"
+                width="370px"
+                height="294px"
+              />
+              <h3>Project Prime</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/boxes.jpg"
+                alt="Project Boxes"
+                width="370px"
+                height="294px"
+              />
+              <h3>Project Boxes</h3>
+              <p>Apps</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/computer.jpg"
+                alt="Computer"
+                width="370px"
+                height="294px"
+              />
+              <h3>Inspiration has no Borders</h3>
+              <p>Web-site</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/magazine.jpg"
+                alt="Magazine"
+                width="370px"
+                height="294px"
+              />
+              <h3>Limited Edition</h3>
+              <p>Design</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/label.jpg"
+                alt="Label"
+                width="370px"
+                height="294px"
+              />
+              <h3>Project LAB</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="card-items">
+              <img
+                src="./images/laptop.jpg"
+                alt="Laptop"
+                width="370px"
+                height="294px"
+              />
+              <h3>Growing Business</h3>
+              <p>Apps</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer-text">
-      <a href="index.html"><span class="web">Web</span>Studio</a>
-      <address class="footer-address">
-        <span>695 Park Ave, NY 10065, USA</span><br />
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-        <a href="tel:+12127724150">+1 212-772-4150</a>
-      </address>
+    <footer class="footer">
+      <div class="footer-text">
+        <a href="index.html"><span class="web">Web</span>Studio</a>
+        <address class="address">
+          <p>695 Park Ave, NY 10065, USA</p>
+          <a href="mailto:info@devstudio.com" class="mail-footer"
+            >info@devstudio.com</a
+          ><br />
+          <a href="tel:+12127724150" class="phone-footer">+1 212-772-4150</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
