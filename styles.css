@@ -35,7 +35,7 @@ ul {
   letter-spacing: 0.02em;
   background: #fff;
   color: black;
-  width: 1600px;
+  width: inherit;
   height: 80px;
   align-items: center;
   display: flex;
@@ -109,13 +109,13 @@ ul {
 }
 
 .main-section {
-  width: 1600px;
+  width: inherit;
   margin: 0;
 }
 
 .hero-section {
   background-color: #2f303a;
-  width: 1600px;
+  width: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +216,7 @@ ul {
 
 .our-team-section {
   background-color: #f5f4fa;
-  width: 1600;
+  width: inherit;
 }
 
 .card {
@@ -237,7 +237,7 @@ ul {
 }
 
 .footer {
-  width: 1600px;
+  width: inherit;
 }
 .footer-text {
   font-style: normal font;
