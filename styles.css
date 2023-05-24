@@ -10,6 +10,7 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #757575;
+  margin: 0;
 }
 
 ul {
@@ -384,7 +385,6 @@ a:focus {
   margin: 0;
   width: 1200px;
   padding-left: 215px;
-  padding-right: 215px;
   padding-bottom: 94px;
 }
 
