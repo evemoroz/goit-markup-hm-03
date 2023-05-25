@@ -204,6 +204,7 @@ ul {
   justify-content: space-between;
   padding: 50px 215px 94px;
   margin: 0;
+  gap: 30px;
 }
 
 .image-text {
@@ -310,6 +311,7 @@ button:focus {
   justify-content: space-between;
   padding: 50px 215px 94px;
   margin: 0;
+  gap: 30px;
 }
 
 .image-items-text {
